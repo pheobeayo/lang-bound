@@ -1,0 +1,173 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_contentName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_contentImage",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_contentDescription",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_contentLink",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_category",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "createContent",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "idToContent",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "contentName",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "contentImage",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "contentDescription",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "contentLink",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "contentOwner",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "category",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "retrieveAllContent",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "contentName",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "contentImage",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "contentDescription",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "contentLink",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "contentOwner",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "category",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          },
+          {
+            "internalType": "address[]",
+            "name": "buyer",
+            "type": "address[]"
+          }
+        ],
+        "internalType": "struct Content.ContentDetails[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "retrieveBuyers",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

@@ -1,0 +1,257 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "allCommunities",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "communityName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "communityDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "image",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "communityOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "communityId",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "communityIdToCommunity",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "communityName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "communityDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "image",
+				"type": "string"
+			},
+			{
+				"internalType": "address",
+				"name": "communityOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "uint256",
+				"name": "communityId",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_communityName",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_communityDescription",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_image",
+				"type": "string"
+			}
+		],
+		"name": "createCommunity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "isCommunityMember",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_communityId",
+				"type": "uint256"
+			}
+		],
+		"name": "joinACommunity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "_communityId",
+				"type": "uint256"
+			}
+		],
+		"name": "leaveCommunity",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "retreiveAllCommunities",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "communityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "communityDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "image",
+						"type": "string"
+					},
+					{
+						"internalType": "address[]",
+						"name": "communityMembers",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "communityOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "communityId",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Communities.Community[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_member",
+				"type": "address"
+			}
+		],
+		"name": "retreiveCommunity",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "string",
+						"name": "communityName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "communityDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "image",
+						"type": "string"
+					},
+					{
+						"internalType": "address[]",
+						"name": "communityMembers",
+						"type": "address[]"
+					},
+					{
+						"internalType": "address",
+						"name": "communityOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "communityId",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct Communities.Community[]",
+				"name": "",
+				"type": "tuple[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "totalCommunities",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]

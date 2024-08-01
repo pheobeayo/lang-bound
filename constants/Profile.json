@@ -1,0 +1,141 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "account",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "langaugeToLearn",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "userName",
+        "type": "string"
+      },
+      {
+        "internalType": "address",
+        "name": "accountOwner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_langaugeToLearn",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_userName",
+        "type": "string"
+      }
+    ],
+    "name": "createAProfile",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "name": "retrieveLearnLanguage",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "name": "retrieveUserName",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "name": "retriveUserAccountByAddress",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "retriveallAccount",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "langaugeToLearn",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "userName",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "accountOwner",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct Profile.Account[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]

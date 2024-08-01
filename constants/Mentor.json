@@ -1,0 +1,138 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_languageToTeach",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_chargingPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "_aboutYou",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "_experience",
+        "type": "uint256"
+      }
+    ],
+    "name": "createAMentorAccount",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "name": "mentorAccount",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "languageToTeach",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "chargingPrice",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "aboutYou",
+        "type": "string"
+      },
+      {
+        "internalType": "uint256",
+        "name": "experience",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bool",
+        "name": "verified",
+        "type": "bool"
+      },
+      {
+        "internalType": "address",
+        "name": "accountOwner",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "retreiveAllMentor",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "languageToTeach",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "chargingPrice",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "aboutYou",
+            "type": "string"
+          },
+          {
+            "internalType": "uint256",
+            "name": "experience",
+            "type": "uint256"
+          },
+          {
+            "internalType": "bool",
+            "name": "verified",
+            "type": "bool"
+          },
+          {
+            "internalType": "address",
+            "name": "accountOwner",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct Mentors.MentorAccount[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_owner",
+        "type": "address"
+      }
+    ],
+    "name": "retriveMentorStatus",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
