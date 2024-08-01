@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@celo/contractkit": "^2.3.0",
-    "@celo/identity": "^3.0.1",
+    "@celo/identity": "^5.1.2",
     "@celo/rainbowkit-celo": "^1.1.0",
     "@fortawesome/fontawesome-free": "^6.4.2",
     "@heroicons/react": "^1.0.6",
